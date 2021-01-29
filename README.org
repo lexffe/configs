@@ -1,0 +1,16 @@
+#+title: configs/README
+#+author: lexffe
+#+date: 2021-01-29
+
+* ?
+
+  Here lies *some* of the configuration files for my daily toolbox:
+    - ~zsh~
+    - ~vim~
+    - ~emacs~
+    - ~nixos~
+
+* ???
+
+  I am tired of all the faffing around with OSes, and configurations.
+  I need something that just works.
