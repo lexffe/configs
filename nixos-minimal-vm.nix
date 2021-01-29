@@ -25,12 +25,15 @@
   users.users.asm = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
+    shell = pkgs.zsh
   }
 
   environment.systemPackages = with pkgs; [
-    wget vim zsh emacs
+    wget vim emacs
     open-vm-tools ## vmware
   ];
+
+  programs.zsh.enable = true;
 
   ## !!!
   services.openssh.enable = true;
