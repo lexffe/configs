@@ -47,16 +47,20 @@
   # Or disable the firewall altogether.
   networking.firewall.enable = false;
 
-  system.stateVersion = "21.03";
+  ## system.stateVersion = "21.03";
+  system.stateVersion = "20.09";
 
   hardware.opengl.enable = true;
-  programs.xwayland.enable = true;
+  ## programs.xwayland.enable = true;
+  
+  programs.sway.enable = true;
 
+  ## full x + wayland DM/DE
   services.xserver = {
     enable = true;
     displayManager.gdm.enable = true;
     desktopManager.gnome3.enable = true;
-    desktopManager.default = "gnome3";
+    displayManager.defaultSession = "gnome";
     displayManager.gdm.wayland = true;
   };
 
